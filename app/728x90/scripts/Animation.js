@@ -5,8 +5,10 @@ app.Animation = (function () {
     var t = TweenMax;
     var tl1 = new TimelineMax();
     var txt1 = document.getElementById('txt1');
-    var img1 = document.getElementById('img1');
-
+    var hoodie = document.getElementById('hoodie');
+    var jersey = document.getElementById('jersey');
+    var pants = document.getElementById('pants');
+    var shoes = document.getElementById('shoes');
 
     var cta = document.getElementById('cta');
     var cta_txt = document.getElementById('cta_txt');
@@ -15,8 +17,7 @@ app.Animation = (function () {
 
 	// --------------------------------------------------------------------------------------
 	function initialize() {
-        // t.set(img1, {transformOrign:'top right'});
-        t.set(banner, {opacity:1});
+		t.set(banner, {opacity:1});
 
         buttonExit.addEventListener('mouseover', function () {
             TweenMax.to(cta, .25, {backgroundColor: "#ffffff"});
@@ -31,8 +32,11 @@ app.Animation = (function () {
 	}
 	// --------------------------------------------------------------------------------------
 	function start() {
-        tl1.from(img1, 2, {scale:1.1, transformOrigin:"right top", ease: Cubic.easeOut})
-            .from(txt1, 1, {y: -130, ease: Cubic.easeInOut});
+        tl1.from(hoodie, 1, {y:100, ease: Cubic.easeOut})
+            .from(pants, 1, {y:100, ease: Cubic.easeOut},"-=.75")
+            .from(jersey, 1, {y:100, ease: Cubic.easeOut},"-=.8")
+            .from(shoes, 1, {y:100, ease: Cubic.easeOut},"-=.8")
+            .from(txt1, 1, {y: -100, ease: Cubic.easeInOut})
 	}
 
 	// --------------------------------------------------------------------------------------

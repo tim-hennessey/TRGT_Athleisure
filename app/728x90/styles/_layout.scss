@@ -5,7 +5,7 @@ body {
 }
 
 #banner {
-    background: #eba2cf;
+    background: #7cded4;
     position: absolute;
     overflow: hidden;
     width: $banner-width;
@@ -28,9 +28,16 @@ body {
 
     #txt1 {
         top: 0;
-        left: 0;
+        left: 77px;
         transform: translate3d(0, 0, 0.1px);
         //opacity:0;
+        position: absolute;
+    }
+
+    #logo {
+        top: 0;
+        left: 0;
+        transform: translate3d(0, 0, 0.1px);
         position: absolute;
     }
 
@@ -42,16 +49,37 @@ body {
         position: absolute;
     }
 
-    #img1 {
-        top: 0;
-        right: 0;
+    #hoodie {
+        bottom: 0;
+        left: 325px;
+        transform: translate3d(0, 0, 0.1px);
+        position: absolute;
+    }
+
+    #jersey {
+        bottom: 0;
+        left: 475px;
+        transform: translate3d(0, 0, 0.1px);
+        position: absolute;
+    }
+
+    #pants {
+        bottom: 0;
+        left: 420px;
+        transform: translate3d(0, 0, 0.1px);
+        position: absolute;
+    }
+
+    #shoes {
+        bottom: 0;
+        left: 563px;
         transform: translate3d(0, 0, 0.1px);
         position: absolute;
     }
 
     #cta {
-        left: 15px;
-        bottom: 15px;
+        right: 15px;
+        top: 32px;
         width: 85px;
         height: 27px;
         border-radius: 5px;
